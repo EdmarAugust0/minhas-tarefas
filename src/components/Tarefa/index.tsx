@@ -50,8 +50,17 @@ const Tarefa = ({
           onChange={alteraStatusTarefa}
         />
         <S.Titulo>
-          {estaEditando && <em>Editando: </em>}
-          {titulo}
+          <>
+            {estaEditando && <em>Editando: </em>}
+            <span
+              style={{
+                textDecoration:
+                  status === enums.Status.CONCLUIDA ? 'line-through' : ``
+              }}
+            >
+              {titulo}
+            </span>
+          </>
         </S.Titulo>
       </label>
       <S.Tag parametro="prioridade" prioridade={prioridade}>
