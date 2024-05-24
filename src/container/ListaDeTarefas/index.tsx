@@ -36,12 +36,12 @@ const ListaDeTarefas = () => {
   const exibeResultadoFiltrage = (quantidade: number) => {
     let mensagem = ''
     const complementacao =
-      termo !== undefined && termo.length > 0 ? `e "${termo}"` : ''
+      termo !== undefined && termo.length > 0 ? `e se chama "${termo}"` : ''
 
     if (criterio === 'todas') {
       mensagem = `${quantidade} taerefa(s) encontrada(s) como: todas ${complementacao}`
     } else {
-      mensagem = `${quantidade} tarefa(s) econtrada(s) como: "${`${criterio}=${valor}`}" ${complementacao} `
+      mensagem = `${quantidade} tarefa(s) econtrada(s) como: "${valor}" ${complementacao} `
     }
 
     return mensagem

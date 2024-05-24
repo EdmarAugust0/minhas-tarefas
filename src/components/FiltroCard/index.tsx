@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { alterarFiltro } from '../../store/reducers/filtro'
 import { RootReducer } from '../../store'
+
 import * as S from './styles'
 import * as enums from '../../utils/enums/Tarefa'
 
