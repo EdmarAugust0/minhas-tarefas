@@ -7,6 +7,7 @@ export const Circulo = styled(Link)`
   height: 64px;
   width: 64px;
   background-color: ${variaveis.verde};
+  color: #fff;
   position: fixed;
   bottom: 40px;
   right: 40px;
